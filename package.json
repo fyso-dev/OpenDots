@@ -13,6 +13,7 @@
     "start": "node --env-file-if-exists=.env dist/server/server/index.js",
     "browser": "node --env-file-if-exists=.env --import tsx src/browser/index.ts",
     "browser:start": "node --env-file-if-exists=.env dist/server/browser/index.js",
+    "db:postgres:provision": "tsx src/server/postgres/provision-cli.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "lint": "eslint src tests vite.config.ts",
@@ -51,6 +52,7 @@
     "react-dom": "^19.3.0",
     "react-markdown": "^10.1.0",
     "rxjs": "^7.8.1",
+    "postgres": "^3.4.7",
     "zod": "^4.6.5"
   },
   "devDependencies": {
